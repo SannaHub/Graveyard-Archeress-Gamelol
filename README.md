@@ -12,7 +12,7 @@ A game code created by the Lyon group for our Basic Programming group project
 
 
 # Description
-This code serves as a platformer, PvE (player versus enemy) game. The code is written using the python programming language and pygames as the main library. The purpose of this game is to defeat all the enemies without the character dying. A powerup is available throughout the game. This powerup attack decreases the enemies health more than the normal player attack. This powerup is in the form of a potion and can be found near the top of the screen. There is more than one potion, each potion gives the player one chance at a special attack.
+This code serves as a platformer, PvE (player versus enemy) game. The code is written using the python programming language and pygames as the main library. The purpose of this game is to defeat all the enemies without the character dying. A powerup is available throughout the game. This powerup attack decreases the enemies health more than the normal player attack. This powerup is in the form of a potion and can be found across the screen. There is more than one potion, each potion gives the player one chance at a special attack.
 
 # Requirements
 *Libraries:*
@@ -32,6 +32,7 @@ Tested with the following IDE's:
     ○ 
     
 Python was downloaded using this site: https://www.python.org/downloads/
+
 Anaconda from https://www.anaconda.com/download/#macos
 
 Python's IDLE was the one used to create this game. 
