@@ -24,7 +24,7 @@ This code serves as a platformer, PvE (player versus enemy) game. The code is wr
 
 Python version 3.7.1 was used to create the game.
 
-The game was tested and cleared to be working properly on versions 3.7.1, ..... of Python.
+The game was tested and cleared to be working properly on versions 3.7.1, 3.6.5, 3.3.2 of Python.
 Tested with the following IDE's:
 
     ○ Python's IDLE
