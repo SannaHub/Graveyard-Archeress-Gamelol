@@ -1,57 +1,75 @@
 # Graveyard-Archeress-Game
 A game code created by the Lyon group for our Basic Programming group project
 
-Configuration instructions
-Installation instructions
-Operating instructions
-A file manifest (list of files included)
-Copyright and licensing information
-Contact information for the distributor or programmer
-Known bugs[3]
-Troubleshooting[3]
-Credits and acknowledgments
-A changelog (usually for programmers)
-A news section (usually for users)
+*Creators:* Sanna Bashir, Geanina Verestiuc and Aidan Ward
 
-○ Title of your project.
-○ A short description of what your code does.
-○ Requirements to run your code.
-■ Which libraries do people need to have installed?
-■ What version number did you use?1
-■ What version of Python did you write / test your code in?
-○ Instructions for running your code.
-○ Citation information for any data sources you have used.
+*Course:* Basic Programming
 
-itle of the Project:
+*Study Program:* Cognitive Science and Artificial Intelligence, year 1
+
+*Instructors:* Dr. F. Hermens and E. van Miltenburg 
 
 
-----------------------------------------
-Creators: Sanna Bashir, Geanina Verestiuc, Aidan Ward
 
-Describtion of what the code does: The code is a platformer/PvE game, it runs a self-coded game where the runner  of the code controls the main player whos purpose it is  to  defeat all the enemies
-Libraries needed: Pygame
-Version used: Pygame 1.9.4
-Version Python: 3.7.1
+# Description
+This code serves as a platformer, PvE (player versus enemy) game. The code is written using the python programming language and pygames as the main library. The purpose of this game is to defeat all the enemies without the character dying. A powerup is available throughout the game. This powerup attack decreases the enemies health more than the normal player attack. This powerup is in the form of a potion and can be found near the top of the screen. There is more than one potion, each potion gives the player one chance at a special attack.
+
+# Requirements
+*Libraries:*
+
+    ○ Pygame 1.9.4
+    ○ Random
+    ○ Os
+    ○ Sys
+
+Python version 3.7.1 was used to create the game.
+
+The game was tested and cleared to be working properly on versions 3.7.1, ..... of Python.
+Tested with the following ides:
+
+Python was downloaded using this site: https://www.python.org/downloads/
+The IDLE that came with it, is the one used to create this game.
+
+# Instructions
+
+*Goal:*
+The goal is to kill all the enemies using either the attack or the powerup attack, without letting your player die. Each enemy has a health of 100. The first enemy; the zombies are the easiest to defeat. The next enemies; the orks are a little harder to defeat. The last enemy: the Desert Robot is the hardest to defeat and also has its own attack.
+
+*Controls/operation:*
+There are two ways to control the character in the game. Either using the arrow or WASD keys on the players keyboard. Each key's function is defined below.
+
+    'esc' = escape/quit game
+    'spacebar' = shoot player's attack
+
+    'w' = jump
+    'a' = move left
+    's' = _does nothing_
+    'd' = move right
+    'q' = escape/quit game
+    'e' = shoot player's powerup attack
+
+    Up arrow = jump
+    Left arrow = move left
+    Down arrow = _does nothing_
+    Right arrow = move right
+    '/' = shoot player's powerup attack
+
+*Adjusting speed of code:*
+After running the code succesfully for the first time, check if the game is not too slow or fast. If it is too slow, change the FPS settings at the beginning of the code to be a little higher. If the game seems too fast, lower the FPS. Test the new setttings and settle on a FPS that suits you and your computer. (this is addressed in the report)
 
 
-Modules used:
+# Acknowledgements
+We'd like to thank the following youtube channels for helping us with getting to know the pygame module:
 
-Sys
-Pygame
-Os
-Random
+https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg
+https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg
 
-Instructions for running the code: 
-#controls
+We'd like to thank ... for testing our game.
 
-#copy and paste path
+We'd like to thank everybody that provides free sprites and sound effects, without them this game wouldn't be what it is today.
 
-#code should be in main folder,inside main folder other folders, with exact names as we
-Named tthem
- file, image, sound and code needs to be 
-in the same folder in order for the game to work.
+# Credits
 
-Information for any data sources used:
 Images/sprites
 
 Background:
