@@ -11,7 +11,7 @@ make sure that the sprites folder is in the folder with the code
 
 path_to_this_file = '/Users/sanna/Desktop/' #please copy and paste the path that leads to the map containing this code
 folder_with_code = 'game!/' #please copy and paste the folder name that contains the code with a slash at the end
-folder_with_sprites = 'Resources/' #please copy and paste the folder name that contains the sprites with a slash at the end
+folder_with_sprites = 'sprites/' #please copy and paste the folder name that contains the sprites with a slash at the end
 
 path = path_to_this_file + os.path.join(folder_with_code, folder_with_sprites)
 
