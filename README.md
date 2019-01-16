@@ -25,10 +25,18 @@ This code serves as a platformer, PvE (player versus enemy) game. The code is wr
 Python version 3.7.1 was used to create the game.
 
 The game was tested and cleared to be working properly on versions 3.7.1, ..... of Python.
-Tested with the following ides:
+Tested with the following IDE's:
 
+    ○ Python's IDLE
+    ○ Anaconda's Spyder
+    ○ 
+    
 Python was downloaded using this site: https://www.python.org/downloads/
-The IDLE that came with it, is the one used to create this game.
+Anaconda from https://www.anaconda.com/download/#macos
+
+Python's IDLE was the one used to create this game. 
+
+The code works fine in Spyder _ONLY_ if you change the last sentence from 'sys.exit()' to 'exit()'. It is unknown to us why this is a requirement, but after some research, we suspect it has something to do with the implementation detail of python in IPython and CPython.
 
 # Instructions
 
