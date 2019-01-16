@@ -6,11 +6,12 @@ import os
 
 """
 opening the right path
+make sure that the sprites folder is in the folder with the code
 """
 
 path_to_this_file = '/Users/sanna/Desktop/' #please copy and paste the path that leads to the map containing this code
 folder_with_code = 'game!/' #please copy and paste the folder name that contains the code with a slash at the end
-folder_with_sprites = 'sprites/' #please copy and paste the folder name that contains the sprites with a slash at the end
+folder_with_sprites = 'Resources/' #please copy and paste the folder name that contains the sprites with a slash at the end
 
 path = path_to_this_file + os.path.join(folder_with_code, folder_with_sprites)
 
@@ -533,9 +534,9 @@ class PowerUp(pg.sprite.Sprite):
 powerups = pg.sprite.Group() #own group for collision
 #spawning powerups
 pu = Potion(90, 50) 
-pu1 = Potion(1600, 50)
+pu1 = Potion(900, 450)
 pu2  =  Potion(700, 50)
-pu3 = Potion(-190, 50)
+pu3 = Potion(450, 350)
 
 powerups.add(pu, pu1, pu2, pu3)
 all_sprites.add(pu, pu1, pu2, pu3)
@@ -657,7 +658,7 @@ class BigBoss(pg.sprite.Sprite):
         self.image = bigboss_left[5]
         self.rect = self.image.get_rect()
         self.rect.x = 1800
-        self.rect.y = HEIGHT - ty - self.rect.height +5
+        self.rect.y = HEIGHT - ty - self.rect.height + 15
         self.speedx = 15
         self.frame = 0
         self.health = 100
@@ -738,10 +739,10 @@ class Attack(pg.sprite.Sprite):
         pg.sprite.Sprite.__init__(self)
         self.image = shotL
         self.rect = self.image.get_rect()
-        self.rect.bottom = y
-        self.rect.centerx = x
+        self.rect.y = y + 20
+        self.rect.x = x
         self.facing = facing
-        self.speedx = 30 * facing
+        self.speedx = 40 * facing
 
 
     def update(self):
@@ -853,11 +854,12 @@ while running:
 
     #little animation of the zombie getting hit
     for arrow in arrows:
-        if arrow.rect.colliderect(zombie.rect):
-            if zombie.speedx > 0:
-                zombie.image = hurtR
-            else:
-                zombie.image = hurtL
+        for zombie in zombies:
+            if arrow.rect.colliderect(zombie.rect):
+                if zombie.speedx > 0:
+                    zombie.image = hurtR
+                else:
+                    zombie.image = hurtL
     
     """update section: side scroller control (only moves platforms and second enemy)"""
     if not zombies:
@@ -936,8 +938,4 @@ while running:
 
 pg.quit() #close the game window
 sys.exit()
-
-
-
-
 
